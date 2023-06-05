@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>disable</title>
+        <link rel="stylesheet" type="text/css" href="right.css">
+    </head>
+    <body oncontextmenu="return false"><!--for whole web pag-->
+        <h1>disabling right click using javascripit</h1>
+        <p class="r1">here we are disabling right click on website or web page<br>
+        using javascripit. it may be useful for me </p> 
+        <!-- for specific part of web page-->   
+        <section oncontextmenu="return false">No not alowed
+        <p class="p1">sometime you might want to disable to content of the browser <br>
+        on your webpage when the user the right clicks! this can be done using a simple trick</p>
+    </section>
+    <ol>
+        <li>surya</li>
+        <li>surya</li>
+        <li>surya</li>
+        <li>surya</li>
+        <li>surya</li>
+        <li>shyam nath rajbhar</li>
+        <li>surya  pratap nishad</li>
+    </ol>
+    <!--you can use this trick  also to disable right click-->
+    <script>
+        document.addEventListener("contextmenu", (event) => {
+           event.preventDefault();
+        });
+     </script>
+
+    </body>
+</html>
